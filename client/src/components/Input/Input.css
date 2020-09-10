@@ -1,0 +1,40 @@
+.input-interface {
+}
+
+.input-box {
+  padding: 5%;
+  width: 80%;
+  font-size: 1.2em;
+  border-radius: 0 0 0 16px;
+  border: none;
+  border: solid #d1d1d1 6px;
+  text-align: left;
+}
+
+/* typing into the textbox, outlines it (this code prevents it) */
+input:focus, textarea:focus, select:focus{
+  outline: none;
+}
+
+.sendButton {
+  color: #fff !important;
+  text-transform: uppercase;
+  background: #2979FF;
+  border-radius: 10px;
+  border: none;
+  width: 20%;
+  border-radius: 0 0 16px 0;
+}
+
+/*  between 280-480px in mobile view */
+@media (min-width: 280px) and (max-width: 480px) {
+  /* chat becomes fullscreen */
+  .input-box {
+   
+  }
+
+  .input-box, .sendButton {
+    border-radius: 0;
+  }
+  
+}

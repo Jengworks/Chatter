@@ -1,0 +1,28 @@
+.infoBar-container {
+  background: #2979FF;
+  border-radius: 16px 16px 0 0;
+  padding: 10px;
+}
+
+.status {
+  margin-left: 20px;
+}
+
+.room-number {
+  color: white;
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
+.exit {
+  padding-right: 20px;
+}
+
+/*  between 480-320px in mobile view */
+@media (min-width: 280px) and (max-width: 480px) {
+  .infoBar-container {
+    background: #2979FF;
+    border-radius: 0 0 0 0;
+    padding: 10px;
+  }
+}

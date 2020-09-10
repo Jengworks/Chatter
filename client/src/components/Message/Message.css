@@ -1,0 +1,57 @@
+/* a basic message container design properties */
+.messageContainer {
+  margin: 20px;
+}
+/* end of message container */
+
+/* message box design properties */
+.messageBox {
+  color: white;  
+  max-width: 80%;
+  padding: 15px 20px 0px 20px;
+  display: inline-block;
+  word-wrap: break-word;
+}
+
+.user {
+  border-radius: 24px 24px 0 24px;
+}
+
+.others {
+  border-radius: 24px 24px 24px 0;
+}
+
+.backgroundBlue {
+  background: #2979FF;
+}
+
+.backgroundLight {
+  background: #e2dfdfa2;
+}
+
+.sentBy {
+  font-family: Helvetica;
+  color: #828282;
+  letter-spacing: 0.3px;
+  margin: 0;
+}
+/* end of message box */
+
+/* message text design */
+.messageText {
+  width: 100%;
+  font-size: 1.1em;
+}
+
+.messageText img {
+  vertical-align: middle;
+}
+
+.colorWhite {
+  color: white;
+}
+
+.colorDark {
+  color: #353535;
+}
+/* end of message text */
