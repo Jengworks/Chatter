@@ -10,7 +10,7 @@ const Join = () => {
 
   return (
     <div className="login-container d-flex flex-column">
-      <h1 className="header d-flex justify-content-center"> Join a room! </h1>
+      <h1 className="header d-flex justify-content-center"> Hurry up and join already! </h1>
       {/* username */}
       <input className="d-flex justify-content-center mt-3" placeholder="Username" type="text" onChange={(event) => setName(event.target.value)} />      
       {/* room id */}
