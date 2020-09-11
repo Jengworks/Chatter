@@ -19,7 +19,8 @@ const Chat = ({ location }) => {
   const [messages, setMessages] = useState([]);
 
   const ENDPOINT = 'https://jengworks-chat-app.herokuapp.com/'
-
+  
+  // performs initialization of name and room data when URL changes
   useEffect(() => {
     // takes the browser's URL query params: e.g. ?name=jsmastery&room=room
     // and returns the param values
@@ -42,15 +43,18 @@ const Chat = ({ location }) => {
 
   }, [ENDPOINT, location.search]); // doing this tells useEffect to run only if these were changed
 
+  // if messages were changed and received, set the new messages
   useEffect(() => {
-    socket.on('message', message => {
+    socket.on('message', message => 
+    {
       setMessages(messages => [ ...messages, message ]);
     });
     
     socket.on("roomData", ({ users }) => {
       setUsers(users);
     });
-}, []); // doing this tells useEffect to run only if messages were changed
+  }, []); // doing this tells useEffect to run only if messages were changed
+
 
   // function for sending messages
   const sendMessage = (event) => {

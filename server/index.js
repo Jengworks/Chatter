@@ -5,6 +5,8 @@ const cors = require('cors');
 
 const { addUser, removeUser, getUser, getUsersInRoom } = require('./users.js');
 
+// ignore this comment - testing heroku
+
 // port
 const PORT = process.env.PORT || 5000
 
@@ -47,6 +49,7 @@ io.on('connection', (socket) => {
 
     if(user){
       io.to(user.room).emit('message', { user: 'admin', text: `${user.name} has left`});
+      io.to(user.room).emit('roomData', { room: user.room, users: getUsersInRoom(user.room)});
     }
   })
 })
