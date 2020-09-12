@@ -48,8 +48,11 @@ const Chat = ({ location }) => {
     });
     
     socket.on("roomData", ({ users }) => {
-      setUsers(users);
+        setUsers(users);
+        document.getElementsByClassName('loading-indicator')[0].style.display = "none";
+        document.getElementsByClassName('chat-desc')[0].style.display = "block";
     });
+
 }, []); // doing this tells useEffect to run only if messages were changed
 
   // function for sending messages
@@ -71,6 +74,11 @@ const Chat = ({ location }) => {
         <InfoBar room={room}/>
         <Messages messages={messages} name={name} />
         <Input message={message} setMessage={setMessage} sendMessage={sendMessage} />
+      </div>
+      <div className ='loading-indicator'>
+        <h1> Connecting to the server
+          <span>.</span>
+        </h1>
       </div>
       <div className='chat-desc'>
         <TextContainer users={users}/>

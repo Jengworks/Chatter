@@ -19,7 +19,37 @@ body {
 
 }
 
+/* loading indicator properties */
+.loading-indicator {
+  margin-left: 100px;
+  color: white;
+}
+
+/* TRANSFORM DOES NOT WORK ON INLINE */
+.loading-indicator h1 span{
+  padding-left: 20px;
+  display: inline-block; 
+  animation: dot-animation .3s infinite;
+}
+
+/* .loading-indicator h1 span:nth-child(1){
+  animation-delay: 1s;
+} */
+
+/* loading indicator */
+@keyframes dot-animation {
+  0% {
+  }
+  100% {
+    transform: translate(80px);
+  }
+
+}
+/* end of loading properties */
+
 .chat-desc {
+  display: none;
+  margin-left: 50px;
   height: 80%;
 }
 
@@ -43,5 +73,6 @@ body {
     height: 100%;
     border-radius: 0;
   }
-  
+
 }
+
