@@ -17,7 +17,7 @@ const Join = () => {
       <input  className="d-flex justify-content-center mt-3" placeholder="Room Code" type="text" onChange={(event) => setRoom(event.target.value)} />
       {/* join button */}
       <Link className="button d-flex justify-content-center mt-3" onClick={event => (!name || !room) ? event.preventDefault() : null} to={`/chat?name=${name}&room=${room}`}>
-        <button type="submit"> Sign In </button>
+        <button type="submit"> Join </button>
       </Link>
     </div>
   )
