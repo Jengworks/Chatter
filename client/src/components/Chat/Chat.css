@@ -48,8 +48,6 @@ body {
 /* end of loading properties */
 
 .chat-desc {
-  display: none;
-  margin-left: 50px;
   height: 80%;
 }
 
@@ -58,6 +56,11 @@ body {
   .chat-interface {
     width: 60%
   }
+
+  .loading-indicator {
+    display: none;
+  }
+  
 }
 
 /*  between 280-480px in mobile view */

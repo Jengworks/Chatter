@@ -49,8 +49,8 @@ const Chat = ({ location }) => {
     
     socket.on("roomData", ({ users }) => {
         setUsers(users);
-        document.getElementsByClassName('loading-indicator')[0].style.display = "none";
-        document.getElementsByClassName('chat-desc')[0].style.display = "block";
+        document.getElementById('loader').style.display = "none";
+        document.getElementById('textfield').placeholder = "Type something...";
     });
 
 }, []); // doing this tells useEffect to run only if messages were changed
@@ -70,17 +70,18 @@ const Chat = ({ location }) => {
 
   return (
     <div className='chat-container d-flex justify-content-center'>
-      <div className='chat-interface d-flex flex-column'>
+      <div id='chat' className='chat-interface d-flex flex-column'>
         <InfoBar room={room}/>
         <Messages messages={messages} name={name} />
         <Input message={message} setMessage={setMessage} sendMessage={sendMessage} />
       </div>
-      <div className ='loading-indicator'>
-        <h1> Connecting to the server
-          <span>.</span>
-        </h1>
-      </div>
       <div className='chat-desc'>
+        <div id='loader' className ='loading-indicator'>
+          <h1> Connecting to the server
+            <span>.</span>
+          </h1>
+        </div>
+        <br></br>
         <TextContainer users={users}/>
       </div>
     </div>

@@ -4,10 +4,11 @@ import './Input.css';
 
 const Input = ({message, setMessage, sendMessage }) => (
   <form className='input-interface d-flex flex-row'>
-    <input
+    <input 
+      id='textfield'
       className="input-box"
       type="text"
-      placeholder="Type a message..."
+      placeholder="Connecting to the room..."
       value={message}
       onChange={(event) => setMessage(event.target.value)}
       onKeyPress={event => event.key === 'Enter' ? sendMessage(event) : null}
