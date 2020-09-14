@@ -8,7 +8,7 @@ Server:
 * Just pick a name and a room code to chat among other people in real-time
 * Shows a list of people that are participating the same room
 * Also view responsive and compatitble on mobile or tablet
-* Option to auto-scroll to the latest message (It's a square icon in the chat)
+* When viewing past messages, you can auto-scroll back down to the latest message (It's a square icon in the chat)
 * **Note: If there are no http requests within a 30-minute period according to [heroku's free hosting terms & policies](https://devcenter.heroku.com/articles/free-dyno-hours), server can be idling so it might take a bit to connect to the server**
 
 ### Client: 
