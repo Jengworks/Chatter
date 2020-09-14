@@ -21,7 +21,7 @@ Server:
 ### Future Implementations:
 * An option to pick and choose an emoji (At the moment, you can type it e.g. ":)")
 * A search feature to look for ongoing chatrooms
-* Privately message someone within the same chat room
+* Provide option to add images to user's identity
 
 ### Libraries You Might Be Interested:
 * [React-Scroll-To-Bottom](https://www.npmjs.com/package/react-scroll-to-bottom)
