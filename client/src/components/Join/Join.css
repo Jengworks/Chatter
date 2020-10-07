@@ -5,6 +5,7 @@ body {
 
 .login-container {
   background-color: #1A1A1D;
+  text-align: center;
   margin: auto;
   width: 400px;
   color: white;
@@ -14,6 +15,15 @@ body {
 .header {
   padding-bottom: 10px;
   border-bottom: 2px solid white;
+}
+
+.desc {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-size: 1.0em;
+  color: white;
+  border-bottom: 2px solid white;
+
 }
 
 /* text inputs */
