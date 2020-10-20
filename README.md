@@ -3,7 +3,7 @@ Client:
  ![Netlify Status](https://api.netlify.com/api/v1/badges/a442bba1-2ddc-40d9-b96d-09733110a712/deploy-status)
 Server: 
 <img src="https://heroku-badge.herokuapp.com/?app=jengworks-chat-app">
-## [React Web Chat App](https://jengworks-chat.netlify.app/)         ![chat-icon](https://raw.githubusercontent.com/Jengworks/React-Web-Chat-App/master/client/public/favicon.ico)
+# [Chatter](https://jengworks-chat.netlify.app/)         ![chat-icon](https://raw.githubusercontent.com/Jengworks/React-Web-Chat-App/master/client/public/favicon.ico)
 
 * Just pick a name and a room code to chat among other people in real-time
 * Shows a list of people that are participating the same room
