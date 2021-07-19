@@ -8,7 +8,7 @@ const { addUser, removeUser, getUser, getUsersInRoom } = require('./users.js');
 // port
 const PORT = process.env.PORT || 5000
 
-const router = require('./router');
+const router = require('./router'); // grabs the exports from the router.js
 
 const app = express();
 const server = http.createServer(app); // express becomes the middleware between client and server
